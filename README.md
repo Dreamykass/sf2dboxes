@@ -5,10 +5,8 @@ A small example C++ project to show how SFML could be integrated with BOX2D. Aim
 The whole list of dependencies and tools used:
 - CMAKE - build system;
 - VCPKG - package manager;
-- SFML - C++ library; graphics, input, etc
-- TGUI - C++/SFML library; user interface
-- BOX2D - C++ library; physics engine
-- SPDLOG - C++ library; logging
+- SFML - graphics, input, etc
+- BOX2D - physics engine
 All these libraries can be installed/built with VCPKG.
 
 
