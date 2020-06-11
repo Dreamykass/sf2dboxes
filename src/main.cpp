@@ -1,12 +1,15 @@
 
-#include <variant>
+#include "control.hpp"
+#include "window.hpp"
+#include "world.hpp"
 #include <iostream>
-#include "render.hpp"
 
 int main() {
   std::cout << "\nhello\n\n";
 
-  std::variant<int, float> var;
+  World world;
+  Control control;
+  Window window(sf::VideoMode(600, 600), "resources/SourceCodePro-Regular.ttf");
 
   std::cout << "\n\ngoodbye\n\n";
   return 0;

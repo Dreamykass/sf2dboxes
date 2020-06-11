@@ -7,6 +7,7 @@ The whole list of dependencies and tools used:
 - VCPKG - package manager
 - SFML - graphics, input, etc
 - BOX2D - physics engine
+- Source Code Pro - font for UI
 Both SFML and BOX2D can be installed/built with VCPKG. CMAKE provides a way to build the project in a platform independent way.
 
 
