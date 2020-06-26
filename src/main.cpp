@@ -1,5 +1,6 @@
 
 #include "control.hpp"
+#include "glue.hpp"
 #include "window.hpp"
 #include "world.hpp"
 #include <iostream>
@@ -11,6 +12,11 @@ int main() {
   Control control;
   Window window(sf::VideoMode(600, 600), "resources/SourceCodePro-Regular.ttf");
 
-  std::cout << "\n\ngoodbye\n\n";
+  while (control.Running()) {
+    control.ProcessEvents(window.GetEvents());
+    window.Render(WorldToRenderables(world, control));
+  }
+
+  std::cout << "\n\ngoodbye\n";
   return 0;
 }

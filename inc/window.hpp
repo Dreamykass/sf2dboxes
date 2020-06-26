@@ -1,5 +1,6 @@
 #pragma once
 
+#include "glue.hpp"
 #include <SFML/Graphics.hpp>
 #include <vector>
 
@@ -27,10 +28,6 @@ public:
   Window& operator=(Window&& other) noexcept = delete;
 
 public:
-  void Render(const World& _world, const Control& _control);
+  void Render(const RenderablePack& _renderable_pack);
   const std::vector<sf::Event> GetEvents();
-
-private:
-  void RenderWorld(const World& _world);
-  void RenderUI(const World& _world, const Control& _control);
 };
